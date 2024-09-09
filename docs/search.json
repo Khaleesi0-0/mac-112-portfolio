@@ -26,5 +26,12 @@
     "title": "Notes",
     "section": "",
     "text": "All notes live here."
+  },
+  {
+    "objectID": "notes/note-02.html",
+    "href": "notes/note-02.html",
+    "title": "5  Note 02",
+    "section": "",
+    "text": "Quarto in RStudio\nReproducibility: Quarto documents combine code and outputs enhancing the reproducibility of analyses.\nDocumentation: Quarto helps in clearly documenting the analysis process, crucial for validation and collaboration.\nInteraction with Console: Running code chunks in Quarto reflects in the console, but rendering Quarto files does not."
   }
 ]
