@@ -1,4 +1,3 @@
-
 ---
 title: "Data viz (Notes)"
 format:
@@ -610,5 +609,3 @@ Check out the [RStudio Data Visualization cheat sheet](https://raw.githubusercon
 \
 \
 \
-
-
