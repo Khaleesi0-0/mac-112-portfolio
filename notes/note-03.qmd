@@ -1,0 +1,22 @@
+---
+title: "Note 03"
+editor: visual
+---
+
+-   **Benefits of Data Visualization:**
+
+    -   Aids in refining research questions.
+
+    -   Enhances communication of findings through storytelling.
+
+-   **Components of Data Graphics:**
+
+    -   **Frame:** Establishes the coordinate system for the data visualization.
+
+    -   **Layer:** Involves adding geometric elements like lines and points that represent data points or their patterns.
+
+    -   **Scales:** Utilize visual aesthetics such as color, size, and shape to add information about data scales or groups.
+
+    -   **Faceting:** Divides data into multiple subplots to explore different data groups.
+
+    -   **Theme:** Manages finer aesthetic details of the plot, such as font type and background color.

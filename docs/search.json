@@ -33,5 +33,12 @@
     "title": "5  Note 02",
     "section": "",
     "text": "Quarto in RStudio\nReproducibility: Quarto documents combine code and outputs enhancing the reproducibility of analyses.\nDocumentation: Quarto helps in clearly documenting the analysis process, crucial for validation and collaboration.\nInteraction with Console: Running code chunks in Quarto reflects in the console, but rendering Quarto files does not."
+  },
+  {
+    "objectID": "notes/note-03.html",
+    "href": "notes/note-03.html",
+    "title": "6  Note 03",
+    "section": "",
+    "text": "Benefits of Data Visualization:\n\nAids in refining research questions.\nEnhances communication of findings through storytelling.\n\nComponents of Data Graphics:\n\nFrame: Establishes the coordinate system for the data visualization.\nLayer: Involves adding geometric elements like lines and points that represent data points or their patterns.\nScales: Utilize visual aesthetics such as color, size, and shape to add information about data scales or groups.\nFaceting: Divides data into multiple subplots to explore different data groups.\nTheme: Manages finer aesthetic details of the plot, such as font type and background color."
   }
 ]
