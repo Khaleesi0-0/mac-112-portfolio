@@ -277,7 +277,8 @@ How many hikes fall into each category? Are the hikes evenly distributed among t
 All of these questions can be answered with: (1) a **bar chart**; of (2) the *categorical* data recorded in the `rating` column. First, set up the plotting **frame**:
 
 ```{r}
-ggplot(hikes, aes(x = rating))
+ggplot(hikes, aes(x = rating)) +
+  geom_bar()
 ```
 
 Think about:
@@ -591,10 +592,10 @@ Practice your viz skills to learn about some of the variables in one of the foll
 
 ```{r}
 # Data on students in this class
-survey <- read.csv("https://mac-stat.github.io/data/112/about_us_2024.csv")
+#survey <- read.csv("https://mac-stat.github.io/data/112/about_us_2024.csv")
 
 # World Cup data
-world_cup <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
+#world_cup <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
 ```
 
 ### Part b {.unnumbered}

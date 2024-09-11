@@ -4,8 +4,8 @@ project:
 
 book:
   title: "COMP/STAT112 Notebook"
-  author: "Your Name Here"
-  date: "Date Here"
+  author: "Khaleesi Chen"
+  date: "9/10"
   reader-mode: true
   
   chapters:
@@ -23,6 +23,7 @@ book:
       - notes/note-01.qmd
       - notes/note-02.qmd
       - notes/note-03.qmd
+      
 
 format:
   html:
