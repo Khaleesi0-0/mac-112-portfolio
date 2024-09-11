@@ -591,8 +591,7 @@ ggplot(hikes, aes(x = elevation)) + geom_histogram(color = "white", binwidth = 2
 Practice your viz skills to learn about some of the variables in one of the following datasets from the previous class:
 
 ```{r}
-# Data on students in this class
-survey <- read.csv("https://mac-stat.github.io/data/112/about_us_2024.csv")
+survey <- read.csv("https://mac-stat.github.io/data/high_peaks.csv")
 
 # World Cup data
 world_cup <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
