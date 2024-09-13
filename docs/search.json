@@ -159,5 +159,12 @@
     "title": "7  Note 03",
     "section": "",
     "text": "Benefits of Data Visualization:\n\nAids in refining research questions.\nEnhances communication of findings through storytelling.\n\nComponents of Data Graphics:\n\nFrame: Establishes the coordinate system for the data visualization.\nLayer: Involves adding geometric elements like lines and points that represent data points or their patterns.\nScales: Utilize visual aesthetics such as color, size, and shape to add information about data scales or groups.\nFaceting: Divides data into multiple subplots to explore different data groups.\nTheme: Manages finer aesthetic details of the plot, such as font type and background color."
+  },
+  {
+    "objectID": "notes/note-04.html",
+    "href": "notes/note-04.html",
+    "title": "8  Note-04",
+    "section": "",
+    "text": "Univariate plots explore patterns in one variable at a time\nBivariate plots explore relationships between two variables\nBar Charts: Ideal for categorical variables or quantitative variables\nHistograms: Useful for quantitative variables with a range of observed values.\nGeoms (geometric objects): Visual representations like bars, points, or lines in a plot.\nColor/Fill: Used to differentiate categories in a plot, especially when comparing groups (e.g., locations in weather data).\n\n\n\nggplot() syntax:\n\nSet up the data frame and variables using aes().\nAdd layers with specific geoms with geom_bar() or geom_density()."
   }
 ]

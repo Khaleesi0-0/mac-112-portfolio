@@ -1,9 +1,7 @@
 ---
-title: "note-04"
+title: "Note-04"
 editor: visual
 ---
-
-### 
 
 -   **Univariate plots** explore patterns in one variable at a time
 -   **Bivariate plots** explore relationships between two variables
