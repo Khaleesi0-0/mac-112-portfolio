@@ -1,0 +1,20 @@
+---
+title: "note-04"
+editor: visual
+---
+
+### 
+
+-   **Univariate plots** explore patterns in one variable at a time
+-   **Bivariate plots** explore relationships between two variables
+-   **Bar Charts**: Ideal for categorical variables or quantitative variables
+-   **Histograms**: Useful for quantitative variables with a range of observed values.
+-   **Geoms (geometric objects)**: Visual representations like bars, points, or lines in a plot.
+-   **Color/Fill**: Used to differentiate categories in a plot, especially when comparing groups (e.g., locations in weather data).
+
+```{=html}
+<!-- -->
+```
+-   **ggplot()** syntax:
+    1.  Set up the data frame and variables using `aes()`.
+    2.  Add layers with specific geoms with `geom_bar()` or `geom_density()`.
