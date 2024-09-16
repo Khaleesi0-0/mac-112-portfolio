@@ -2,3 +2,13 @@
 title: "Note-05"
 editor: visual
 ---
+
+-   Code
+
+    -   Use `facet_wrap()` or `geom_line()` to distinguish between categories (e.g., location).
+
+    -   Use `fill = "blue"` for static colors and `aes(fill = variable)` for variable-based colors.
+
+    -   Use line plots for time-based data (e.g., temp3pm over date).
+
+-   
