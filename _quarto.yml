@@ -17,7 +17,7 @@ book:
       - activities/activity-02.qmd
       - activities/activity-03.qmd
       - activities/03-univariate-viz-notes.qmd
-      - activities/activity-04.html
+      - activities/activity-04.qmd
     
     - part: notes/README.qmd
       chapters: 
@@ -37,5 +37,5 @@ format:
     code-tools: true
 
 execute:
-  cache: true
+  cache: false
   freeze: auto
