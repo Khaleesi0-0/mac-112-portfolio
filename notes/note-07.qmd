@@ -1,0 +1,13 @@
+---
+title: "note-07"
+editor: visual
+---
+
+####  **Guiding Principles of Effective Visualizations:**
+
+-   **Clarity, Accuracy, Simplicity, Relevance**
+-   Visualizations should be designed with an awareness of equity, ensuring that they do not perpetuate biases or reinforce existing inequalities.
+
+#### **Ethical Considerations in Data Visualization:**
+
+-   **Visibility, Privacy,** **Power, Emotion & Embodiment, Pluralism**, **Context**
