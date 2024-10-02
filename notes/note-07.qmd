@@ -1,5 +1,5 @@
 ---
-title: "note-07"
+title: "Note-07"
 editor: visual
 ---
 
