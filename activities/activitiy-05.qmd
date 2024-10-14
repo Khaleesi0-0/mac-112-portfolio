@@ -14,19 +14,6 @@ code-fold: false
 ::: {.callout-caution title="Learning Goals"}
 **War**
 
----
-title: "Multivariate Viz"
-number-sections: true
-execute: 
-  warning: false
-fig-height: 2.75
-fig-width: 4.25
-fig-env: 'figure'
-fig-pos: 'h'
-fig-align: center
-code-fold: false
----
-
 ::: {.callout-caution title="Learning Goals"}
 **Warm-up (together)**
 
@@ -301,7 +288,6 @@ head(education)
 
 A codebook is provided by Danny Kaplan who also made these data accessible:
 
-![](https://mac-stat.github.io/images/112/SATcodebook.png)
 
 ### Exercise 1: SAT scores {.unnumbered}
 
@@ -1115,7 +1101,7 @@ head(education)
 
 A codebook is provided by Danny Kaplan who also made these data accessible:
 
-![](https://mac-stat.github.io/images/112/SATcodebook.png)
+
 
 ### Exercise 1: SAT scores {.unnumbered}
 
