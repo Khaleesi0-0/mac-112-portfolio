@@ -1,0 +1,40 @@
+---
+title: "note-10"
+editor: visual
+---
+
+#### **Reshaping Data Overview:**
+
+-   **Reshaping** data refers to changing the structure of a dataset, often moving between "wide" and "long" formats.
+
+-   **Wide Format**: Data is spread out across more columns (e.g., multiple columns for different time periods or categories).
+
+-   **Long Format**: Data is condensed into fewer columns, with multiple observations stacked in rows for the same categories or time periods.
+
+### **Key Concepts in Reshaping:**
+
+1.  **Units of Observation**:
+
+    -   This refers to what each row in the dataset represents. When reshaping data, the units of observation can change.
+
+    -   For example, raw data might contain individual penguin measurements, while reshaped data (via summarization) could represent species-level averages.
+
+2.  **Information Loss**:
+
+    -   Aggregating data (e.g., via `summarize()` after `group_by()`) can lead to information loss, as individual data points are reduced to summary statistics.
+
+    -   Reshaping without aggregation (e.g., via `pivot_longer()` or `pivot_wider()`) generally preserves information, only changing how it is represented.
+
+### **Wide vs Long Formats**:
+
+-   **Wide Format**: Each row contains multiple values (e.g., average body mass of male and female penguins in separate columns).
+
+    -   **Example**
+
+        `penguin_avg |>    pivot_wider(names_from = sex, values_from = avg_body_mass)`
+
+-   **Long Format**: Multiple observations (e.g., male and female body mass) are stacked in rows under a single column for each category.
+
+    -   **Example**:
+
+        `penguin_avg_wide |>    pivot_longer(cols = c(female, male), names_to = "sex", values_to = "avg_body_mass")`

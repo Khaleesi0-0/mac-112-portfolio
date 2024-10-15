@@ -18,10 +18,10 @@ book:
       - activities/activity-03.qmd
       - activities/03-univariate-viz-notes.qmd
       - activities/activity-04.qmd
-      - activities/activity-05.qmd
       - activities/activity-06.qmd
       - activities/activity-08.qmd
       - activities/activity-07.qmd
+      - activities/activity-10.qmd
       - activities/activity-12.qmd
      
     
@@ -33,6 +33,10 @@ book:
       - notes/note-04.qmd
       - notes/note-05.qmd
       - notes/note-07.qmd
+      - notes/note-08.qmd
+      - notes/note-09.qmd
+      - notes/note-10.qmd
+      - notes/note-11.qmd
       
 
 format:

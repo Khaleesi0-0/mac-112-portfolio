@@ -1,0 +1,20 @@
+---
+title: "note-09"
+editor: visual
+---
+
+#### **Dealing with Dates using `lubridate`:**
+
+The `lubridate` package simplifies working with dates and times in R.
+
+-   **Parse dates**: Convert strings to date objects with `ymd()`, `mdy()`, etc.
+
+-   **Extract date components**: Use functions like `year()`, `month()`, `day()` to break down dates into components.
+
+-   **Manipulate dates**: Add or subtract time periods using functions like `add_with_rollback()`, or adjust timezones.
+
+Multiple Verb Example:
+
+penguins \|\>
+filter(species == "Gentoo") \|\>
+arrange(desc(bill_length_mm))

@@ -1,0 +1,66 @@
+---
+title: "note-11"
+editor: visual
+---
+
+#### **Types of Joins**:
+
+Joins are used to combine two datasets based on a common key or variable. The most common types of joins in R are **mutating joins** and **filtering joins**. These are part of the `dplyr` package, and they allow you to either add columns or filter rows from datasets.
+
+### **Mutating Joins**:
+
+Mutating joins add columns from one dataset to another based on matching keys.
+
+1.  **`left_join()`**:
+
+    -   **Action**: Keeps all rows from the **left** dataset and adds columns from the **right** dataset where there is a match. Rows with no match in the right dataset will have `NA` values for the missing columns.
+
+    -   **Example**
+
+        `students_1 |> left_join(enrollments_1)`
+
+    -   **Result**: All students are kept, and enrollment data is added for matching classes. Classes in the left dataset without matches in the right will have `NA` values for enrollment.
+
+2.  **`inner_join()`**:
+
+    -   **Action**: Only keeps rows that have matching values in both datasets.
+
+    -   **Example**
+
+        `students_1 |> inner_join(enrollments_1)`
+
+    -   **Result**: Only students enrolled in classes that are in both datasets are kept.
+
+3.  **`full_join()`**:
+
+    -   **Action**: Keeps all rows from both datasets, filling in `NA` for missing matches.
+
+    -   **Example**
+
+        `students_1 |> full_join(enrollments_1)`
+
+    -   **Result**: All students and all classes are kept, even if there is no match between the two datasets. Missing values are filled with `NA`.
+
+### **Filtering Joins**:
+
+Filtering joins filter rows based on the presence or absence of matches between two datasets.
+
+1.  **`semi_join()`**:
+
+    -   **Action**: Keeps only rows from the **left** dataset that have matching values in the **right** dataset.
+
+    -   **Example**:
+
+        `students_1 |> semi_join(enrollments_1)`
+
+    -   **Result**: Only students who are enrolled in classes listed in the right dataset are kept. No columns from the right dataset are added.
+
+2.  **`anti_join()`**:
+
+    -   **Action**: Keeps only rows from the **left** dataset that **do not** have matching values in the **right** dataset.
+
+    -   **Example**:
+
+        `students_1 |> anti_join(enrollments_1)`
+
+    -   **Result**: Only students whose classes are **not** in the right dataset are kept.

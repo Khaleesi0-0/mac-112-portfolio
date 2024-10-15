@@ -1,0 +1,42 @@
+---
+title: "note-08"
+editor: visual
+---
+
+-   **Select**:
+
+    -   Used to choose specific columns from a dataset.
+
+    -   Example: `elections |> select(state_name, county_name, dem_pct_20, dem_pct_16)`
+
+-   **Mutate**:
+
+    -   Used to create or modify columns in a dataset.
+
+    -   Example: `elections |> mutate(dem_change = dem_pct_20 - dem_pct_16)`
+
+-   **Filter**:
+
+    -   Used to filter rows based on conditions.
+
+    -   Example: `elections |> filter(state_name == "Minnesota")`
+
+-   **Arrange**:
+
+    -   Used to sort rows by the values of a column.
+
+    -   Example: `elections |> arrange(desc(dem_pct_20))` to sort by Democratic support in descending order.
+
+-   **Summarize**:
+
+    -   Used to calculate summary statistics (e.g., mean, sum).
+
+    -   Example: `elections |> summarize(total_votes = sum(total_votes_20))`
+
+    -   Typically combined with `group_by` to perform summaries over groups.
+
+-   **Group_by**:
+
+    -   Used to group rows by values of one or more columns.
+
+    -   Example: `elections |> group_by(state_name) |> summarize(avg_dem_pct = mean(dem_pct_20))`
