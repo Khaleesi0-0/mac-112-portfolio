@@ -22,7 +22,9 @@ book:
       - activities/activity-08.qmd
       - activities/activity-07.qmd
       - activities/activity-10.qmd
+      - activities/acticity-12.qmd
       - activities/activity-12.qmd
+      - activities/activity-13.qmd
      
     
     - part: notes/README.qmd

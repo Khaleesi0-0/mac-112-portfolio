@@ -15,6 +15,4 @@ The `lubridate` package simplifies working with dates and times in R.
 
 Multiple Verb Example:
 
-penguins \|\>
-filter(species == "Gentoo") \|\>
-arrange(desc(bill_length_mm))
+penguins \|\> filter(species == "Gentoo") \|\> arrange(desc(bill_length_mm))
