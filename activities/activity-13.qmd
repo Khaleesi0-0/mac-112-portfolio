@@ -344,6 +344,8 @@ courses_clean |>
 Get a subset of `courses_clean` that only includes courses taught by Alicia Johnson.
 
 ```{r}
+courses_clean |> 
+  filter(str_detect(instructor, "Alicia Johnson")) 
 ```
 
 #### Part b {.unnumbered}
@@ -362,6 +364,16 @@ Create a new dataset from `courses_clean`, named `stat`, that only includes STAT
 -   The result should have 19 rows and 4 columns.
 
 ```{r}
+stat <- courses_clean |> 
+  filter(dept == "STAT") |> 
+  mutate(name = str_replace(name, "Introduction to ", "")) |>
+  mutate(name = str_replace(name, "Statistical", "Stat")) |> 
+  mutate(start_time = str_sub(time, 1, 5)) |> 
+  select(number, name, start_time, enroll)
+
+stat
+
+dim(stat)
 ```
 
 \
@@ -382,6 +394,14 @@ In the next exercises, we'll dig into enrollments. Let's get the data ready for 
 Save the results as `enrollments` (don't overwrite `courses_clean`).
 
 ```{r}
+enrollments <- courses_clean |> 
+  filter(dept != "PE", dept != "INTD") |> 
+  filter(!(dept == "MUSI" & as.numeric(number) < 100)) |> 
+  filter(!(dept == "THDA" & as.numeric(number) < 100)) |> 
+  filter(!str_detect(section, "L"))
+  
+head(enrollments)
+
 ```
 
 \
@@ -409,8 +429,8 @@ To comment/uncomment several lines of code at once, highlight them then click <k
 :::
 
 ```{r}
-# enrollments |>
-#   filter(dept %in% c("STAT", "COMP"), number == 112, section == "01")
+enrollments |>
+  filter(dept %in% c("STAT", "COMP"), number == 112, section == "01")
 ```
 
 Notice that these are the exact same section! In order to not double count an instructor's enrollments, we can keep only the courses that have `distinct()` *combinations* of `days, time, instructor` values.  Uncomment the code lines in the chunk below.
